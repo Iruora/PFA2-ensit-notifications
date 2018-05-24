@@ -1,0 +1,31 @@
+page-authentication {
+
+}
+.Btn {
+    border: 1px solid rgb(185, 185, 185);
+    text-align: center;
+    padding-top: 5%;
+    padding: 5%; 
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    font-weight: 500;
+    box-shadow: 0px 1px 5px black;
+    border-radius: 5px;
+    height: 10%;
+    font-size: 13px;
+}
+.Btn:active{
+    border: 1px solid rgb(185, 185, 185);
+    text-align: center;
+    padding-top: 5%;
+    padding: 5%; 
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+    font-weight: 500;
+    font-size: 13px;
+    box-shadow: none;
+    border-radius: 5px;
+    height: 10%;
+}

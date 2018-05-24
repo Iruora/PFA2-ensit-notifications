@@ -1,0 +1,16 @@
+user-list {
+    tr:nth-child(even) {background-color: #f2f2f2;}
+    th {
+        background-color:lightseagreen;
+        color: white;
+    }
+
+    td {
+        overflow: scroll;
+        height: 3em;
+    }
+
+    .table {
+        width: 100%;
+    }
+}

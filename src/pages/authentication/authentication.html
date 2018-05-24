@@ -1,0 +1,69 @@
+<!--
+  Generated template for the AuthenticationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Authentification</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-slides #AuthSlides>
+    <ion-slide>
+      <div class="Btn" tabindex="1">
+        <img id="studentimg" src="assets/icon/Student.png" width="10%" (click)="showStudentAuth()" />
+        <p id="StudentLabel">Espace Etudiant</p>
+      </div>
+      <div class="Btn" tabindex="1">
+        <img id="studentimg" src="assets/icon/Teacher.png" width="10%" (click)="showTeacherAuth()" />
+        <p id="StudentLabel">Espace Enseignant</p>
+      </div>
+    </ion-slide>
+    <!--Admin auth slide-->
+
+    <ion-slide>
+      
+      <ion-list>
+        Teacher 
+        <form (ngSubmit)="teacherAuth($event)">
+          <ion-item>
+            <ion-label floating>login</ion-label>
+            <ion-input type="text" [(ngModel)]="loginTeacher" name="loginTeacher"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>Mot de passe</ion-label>
+            <ion-input type="password" [(ngModel)]="pwdTeacher" name="pwdTeacher"></ion-input>
+          </ion-item>
+            <button ion-button block outline color="redNNS" style="margin-top: 15%">Connexion</button>
+            <button ion-button block outline color="redNNS" style="margin-top: 15%" (click)="annuler($event)">Annuler</button>
+        </form>
+      </ion-list>
+    </ion-slide>
+
+    <!--Student auth slide-->
+
+    <ion-slide>
+      <ion-list>
+         Student
+        <form (ngSubmit)="studentAuth($event)">
+          <ion-item>
+            <ion-label floating>login</ion-label>
+            <ion-input type="text" [(ngModel)]="loginStudent" name="loginStudent"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>Mot de passe</ion-label>
+            <ion-input type="password" [(ngModel)]="pwdStudent" name="pwdStudent"></ion-input>
+          </ion-item>
+          <button ion-button block outline color="redNNS" style="margin-top: 15%">Connexion</button>
+          <button ion-button block outline color="redNNS" style="margin-top: 15%" (click)="annuler($event)">Annuler</button>
+        </form>
+      </ion-list>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

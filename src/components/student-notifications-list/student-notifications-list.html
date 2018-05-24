@@ -1,0 +1,21 @@
+<ion-list>
+  <!--<button ion-item *ngFor="let notif of notificationsList" (click)="showNotif(notif)">
+    {{notif.text}}
+  </button>-->
+  <ion-item-sliding *ngFor="let notif of notificationsList" #notification >
+    <ion-item text-wrap ion-item (click)="showNotif(notif)" [ngStyle]="{'background-color': notif.isClicked ? 'white' : '#DCDCDC'}" >
+      <ion-avatar class="iconAbout" item-start >
+      <img  src="assets/icon/{{notif.about}}.png" />
+      </ion-avatar>
+      <p ion-text class="fromTo"><span class="sender">{{notif.sender}}</span> a envoyé une notification à<br/> <span class="receiver">{{notif.receiver}}</span></p>
+      <p item-end class="time" [innerHTML]="notif.time"></p>
+      <sup ion-text>à propos: {{notif.about}}</sup>
+    </ion-item>
+    <ion-item-options side="right">
+      <button ion-button color="redNNS" (click)="removeNotification(notif)">
+        <ion-icon md="md-trash" style="margin-left: 0.25em"></ion-icon>
+         supprimer
+      </button>
+    </ion-item-options>
+  </ion-item-sliding>
+</ion-list>

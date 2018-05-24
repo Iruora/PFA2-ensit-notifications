@@ -1,0 +1,24 @@
+page-modif-user {
+    .error-msg {
+        color : red;
+        font-size: 0.8em;
+
+        
+        //background-color: aliceblue
+    }
+    .err-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-x: scroll;
+        height: 5rem;
+        width: 100%;
+        border-width: 1px;
+        border-color: #ea6153;
+        border-radius: 12%
+        //z-index: 900;
+    }
+    .scroll-content { 
+        padding-bottom: 0!important;
+    }
+}

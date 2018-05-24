@@ -1,0 +1,24 @@
+page-show-notification-detail {
+
+}
+span.about, h2.msgHeader, h2.linkHeader{
+    font-size: 20px;
+    font-weight: 500;
+    color: #2e39a0
+}
+h2.objet {
+    font-size: 16px;
+    font-weight: 300;
+    color: #1f2666
+}
+p.time {
+    text-align: left
+}
+h2.msg, p.msg {
+    font-size: 12px;
+    line-height: 1.6
+}
+#message {
+    height: 11em;
+    overflow: scroll
+}

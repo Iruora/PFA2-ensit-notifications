@@ -1,0 +1,35 @@
+notifications-list {
+
+}
+.beforClicked {
+    background-color: rgba(158, 158, 158, 0.993)
+}
+.afterClicked {
+    background-color: floralwhite
+}
+p.time {
+    font-size: 10px;
+    text-align: right;
+    line-height: 1.6;
+}
+span.sender {
+    color: #303F9F;
+    font-weight: bold
+}
+span.receiver {
+    color: #303F9F;
+    font-weight: bold
+}
+p.fromTo {
+    font-size: 13px;
+    line-height: 1.6;
+}
+sup {
+    color: dimgrey
+}
+.item-avatar {
+    width: 100px !important;
+    height: 100px !important;
+    max-width: 100px !important;
+    max-height: 100px !important;
+}

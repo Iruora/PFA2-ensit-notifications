@@ -1,0 +1,97 @@
+<!--
+  Generated template for the SendNotificationFormPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar id="ionNavbar">
+    <h4 id="Header">Envoyer Une Notification</h4>
+
+    <ion-buttons end *ngIf="showSendBtn">
+      <button ion-button icon-only style="margin-top: 0.4em" type="submit" form="notificationForm">
+        <ion-icon md="md-send" style="font-size: 2em;margin-top: -0.2em" color="light"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <form (ngSubmit)="sendNotification()" id="notificationForm">
+    <ion-slides #slides (ionSlideDidChange)="slideChanged()">
+      <ion-slide>
+        <h5>Objet</h5>
+        <ion-item>
+          <ion-label>À propos</ion-label>
+          <ion-select [(ngModel)]="about" name="about" (ngModelChange)="activateNextBtn()">
+            <ion-option>Cours</ion-option>
+            <ion-option>Changement de salle</ion-option>
+            <ion-option>Emploie du temps</ion-option>
+            <ion-option>Répartition des examens</ion-option>
+            <ion-option>Note</ion-option>
+            <ion-option>Offre de stage</ion-option>
+            <ion-option>Actualité</ion-option>
+          </ion-select>
+        </ion-item>
+        <h5>Destinataire</h5>
+        <ion-list radio-group [(ngModel)]="receiver" (ngModelChange)="activateNextBtn()" (ngModelChange)="changeByClassElements()"
+          name="receiver">
+          <ion-item>
+            <ion-label>Tous</ion-label>
+            <ion-radio value="all"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Selon la classe</ion-label>
+            <ion-radio value="byClass"></ion-radio>
+          </ion-item>
+        </ion-list>
+        <ion-item>
+          <ion-label>Niveau</ion-label>
+          <ion-select [(ngModel)]="niveau" name="niveau" (ngModelChange)="changeByClassElements()" (ngModelChange)="activateNextBtn()"
+            [disabled]="niveauDisabled">
+            <ion-option>1 ére année</ion-option>
+            <ion-option>2 ème année</ion-option>
+            <ion-option>3 ème année</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Classe</ion-label>
+          <ion-select [(ngModel)]="classe" name="classe" [disabled]="groupDisabled" (ngModelChange)="activateNextBtn()">
+            <ion-option>Groupe A</ion-option>
+            <ion-option>Groupe B</ion-option>
+            <ion-option>Les deux groupes</ion-option>
+          </ion-select>
+        </ion-item>
+        <button id="nextBtn" ion-button clear color="redNNS" (click)="nextSlide($event)" [disabled]="nextActive">
+          <p id="nextBtnText">suivant</p>
+          <ion-icon id="nextIcon" md="ios-arrow-dropright-outline"></ion-icon>
+        </button>
+      </ion-slide>
+      <ion-slide id="writingElements">
+        <h5>Message</h5>
+        <ion-item style="width: 100%">
+          <ion-textarea placeholder="Taper votre texte ici" [(ngModel)]="contenu" name="contenu"></ion-textarea>
+        </ion-item>
+        <h5>Lien (optionel)</h5>
+        <ion-item>
+          <ion-input [(ngModel)]="links" [readonly]="true" placeholder="https:// ou http://" name="links"></ion-input>
+        </ion-item>
+        <ion-buttons end>
+          <button icon-end small ion-button outline color="redNNS" (click)="pastURL($event)">
+            Coller
+            <ion-icon md="md-paper"></ion-icon>
+          </button>
+        </ion-buttons>
+        <button id="backBtn" ion-button clear color="redNNS" (click)="backSlide($event)">
+          <ion-icon id="backIcon" md="ios-arrow-dropleft-outline"></ion-icon>
+          <p id="backBtnText">précédent</p>
+        </button>
+      </ion-slide>
+    </ion-slides>
+  </form>
+
+</ion-content>

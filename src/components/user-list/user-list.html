@@ -1,0 +1,19 @@
+<!-- Generated template for the UserListComponent component -->
+<ion-searchbar [(ngModel)]="myInput" (ionInput)="setFilterItems($event)" [showCancelButton]="shouldShowCancel" (ionCancel)="onCancel($event)">
+</ion-searchbar>
+
+<ion-scroll scrollY="true" style="height: 80%">
+  <table class="table">
+    <tr class="row">
+      <th class="col">Firstname</th>
+      <th class="col">Lastname</th>
+      <th class="col">CIN</th>
+    </tr>
+    <tr class="row" *ngFor="let user of users" (click)="openModal(user)">
+      <td class="col">{{user.prenom}}</td>
+      <td class="col">{{user.nom}}</td>
+      <td class="col" >{{user.cin}}</td>
+    </tr>
+
+  </table>
+</ion-scroll>

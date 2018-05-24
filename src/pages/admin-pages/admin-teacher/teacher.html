@@ -1,0 +1,28 @@
+<!--
+  Generated template for the TeacherPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="redNNS">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Enseignant</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <div>
+    <button ion-button outline color="secondary">Import</button>
+    <button ion-button outline color="danger">Export</button>
+    <br>
+  </div>
+
+  
+  
+  <user-list [collectionNameOut]="collectionNameIn"></user-list>
+  <fab-plus-btn></fab-plus-btn>
+</ion-content>

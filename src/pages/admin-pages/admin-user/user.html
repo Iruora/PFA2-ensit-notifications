@@ -1,0 +1,82 @@
+<!--
+  Generated template for the UserPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="redNNS">
+    <ion-title>{{navParams.get('nom')}} {{navParams.get('prenom')}}</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closeModal()">Close</button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-scroll scrollY="true">
+    <ion-card>
+
+      <ion-item>
+        <ion-avatar item-start>
+          <img src="assets/imgs/profile.png">
+        </ion-avatar>
+        <h2>{{navParams.get('nom')}} {{navParams.get('prenom')}}</h2>
+        <p>Date de Naissance : {{birthday}}</p>
+      </ion-item>
+
+      <!--img src="../../assets/imgs/mdwallpaper.png"-->
+      <ion-item class="row">
+        <h1 *ngIf="userType" text-center>Etudiant(e)</h1>
+        <h1 *ngIf="!userType" text-center>Enseignant(e)</h1>
+      </ion-item>
+      <ion-card-content>
+
+        <ion-item class="row">
+          <b>N° Carte Identité : </b> {{navParams.get('cin')}}
+        </ion-item>
+        <ion-item class="row" *ngIf="userType">
+          <b>Niveau d'étude : </b> {{navParams.get('niveauEtude')}}
+        </ion-item>
+        <ion-item class="row" *ngIf="userType">
+          <b>Groupe : </b> {{navParams.get('groupe')}}
+        </ion-item>
+
+        <ion-item class="row" *ngIf="!userType">
+          <b>Spécialité : </b> {{navParams.get('speciality')}}
+        </ion-item>
+
+        <ion-item class="row">
+          <b>login : </b> {{navParams.get('login')}}
+        </ion-item>
+
+        <ion-item class="row">
+          <b>Mot de passe : </b> {{navParams.get('password')}}
+        </ion-item>
+
+      </ion-card-content>
+      <ion-row>
+
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear>
+            <ion-icon ios="ios-create" md="md-create" color="warning"></ion-icon>
+            <div color="warning" (click)="openModifModal(navParams)">Modifier</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear (click)="removeUser(navParams)">
+            <ion-icon ios="ios-trash" md="md-trash" color="redNNS"></ion-icon>
+            <div color="redNNS">Delete</div>
+          </button>
+        </ion-col>
+
+      </ion-row>
+
+    </ion-card>
+  </ion-scroll>
+</ion-content>

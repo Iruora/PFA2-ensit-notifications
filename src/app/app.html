@@ -1,0 +1,19 @@
+<ion-menu *ngIf="2==2" side="left" [content]="mycontent">
+    <ion-content>
+        <ion-header class="coverImg" >
+                <div class="avatar"></div>
+                <div class="nomEtPrenom">{{nomEtPrenom}}</div>
+        </ion-header>
+        <ion-list class="menuItems">
+            <p style="margin-left: 10px">Menu</p>
+            <hr class="separator">
+            <button style="margin-left: 10px;font-size: 13px" menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+                <ion-icon *ngIf="p.title == 'Home'" md="md-home" style="margin-right:20px"></ion-icon>
+                <ion-icon *ngIf="p.title != 'Home'" md="md-school" style="margin-right:20px"></ion-icon>
+                {{p.title}}
+                <ion-badge color="redNNS" item-right>{{p.badge}}</ion-badge>
+            </button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav #mycontent [root]="rootPage" swipeBackEnabled="false"></ion-nav>
