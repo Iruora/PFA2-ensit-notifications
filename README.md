@@ -11,3 +11,9 @@ ENSIT Notifications is a cross-platform mobile app built using:
 #### Back-End:
 For the back-end we used google firebase which it provides us with a real time NoSql database (cloud firestore) and a notification service
 Google Cloud Messanging (GCM).
+
+### Developer team (N.N.S)
+This app is developped with combined efforts of N.N.S team:
+* Najmedine MANNAII (Najmedine.Mannaii@ensit.u-tunis.tn).
+* Nidhal AROURI (Nidhal.Arouri@ensit.u-tunis.tn).
+* Sourour AKACHA (Sourour.Akacha@ensit.u-tunis.tn).
