@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Teacher</string>
+    <string name="launcher_name">@string/app_name</string>
+    <string name="activity_name">@string/launcher_name</string>
+    
+    <string name="google_app_id">1:211344616641:android:33c017b2de54f1e9</string>
+    <string name="google_api_key">AIzaSyCiRM1o6t_floGlQ7VHqPVB19Ldt2iM930</string>
+</resources>

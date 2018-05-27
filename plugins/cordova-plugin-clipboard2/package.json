@@ -1,0 +1,64 @@
+{
+  "_from": "cordova-plugin-clipboard2",
+  "_id": "cordova-plugin-clipboard2@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-ZHDzp0rC6my8P7vN4rdXGE4BwNQ=",
+  "_location": "/cordova-plugin-clipboard2",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-clipboard2",
+    "name": "cordova-plugin-clipboard2",
+    "escapedName": "cordova-plugin-clipboard2",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-clipboard2/-/cordova-plugin-clipboard2-0.1.0.tgz",
+  "_shasum": "6470f3a74ac2ea6cbc3fbbcde2b757184e01c0d4",
+  "_spec": "cordova-plugin-clipboard2",
+  "_where": "C:\\Users\\ndm\\Documents\\ionic Apps\\Teacher",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/danielehrhardt/cordova-plugin-clipboard2/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-clipboard2",
+    "platforms": [
+      "ios",
+      "android",
+      "wp8"
+    ]
+  },
+  "deprecated": false,
+  "description": "Clipboard management plugin for Cordova/PhoneGap",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "homepage": "https://github.com/danielehrhardt/cordova-plugin-clipboard2#readme",
+  "keywords": [
+    "clipboard",
+    "copy",
+    "paste",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-wp8"
+  ],
+  "license": "MIT",
+  "name": "cordova-plugin-clipboard2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielehrhardt/cordova-plugin-clipboard2.git"
+  },
+  "version": "0.1.0"
+}

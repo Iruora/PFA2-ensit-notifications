@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "211344616641",
+    "firebase_url": "https://pfaensit-cde3a.firebaseio.com",
+    "project_id": "pfaensit-cde3a",
+    "storage_bucket": "pfaensit-cde3a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211344616641:android:33c017b2de54f1e9",
+        "android_client_info": {
+          "package_name": "com.notifenns.tn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211344616641-a1og05mkff7o1t71gfqr8odepe3367ja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiRM1o6t_floGlQ7VHqPVB19Ldt2iM930"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211344616641:android:bc61fa9f3308a917",
+        "android_client_info": {
+          "package_name": "edu.ensit.notifications.nns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211344616641-a1og05mkff7o1t71gfqr8odepe3367ja.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiRM1o6t_floGlQ7VHqPVB19Ldt2iM930"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

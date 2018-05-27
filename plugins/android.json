@@ -1,0 +1,39 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-firebase": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-clipboard2": {
+      "PACKAGE_NAME": "edu.ensit.notifications.nns"
+    },
+    "cordova-plugin-ionic-wkkeyboard": {
+      "PACKAGE_NAME": "edu.ensit.notifications.nns"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "edu.ensit.notifications.nns"
+    }
+  },
+  "dependent_plugins": {}
+}
